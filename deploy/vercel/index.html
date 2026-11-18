@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DocuSeal · OWeb Satellite</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0b1220;
+        --card: #141c2e;
+        --text: #e8edf7;
+        --muted: #9aa8c0;
+        --accent: #5b8cff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        background: radial-gradient(1200px 600px at 20% -10%, #1a2a4a, var(--bg));
+        color: var(--text);
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+      main {
+        max-width: 32rem;
+        background: var(--card);
+        border: 1px solid #24314d;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      }
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: 1.5rem;
+      }
+      p {
+        margin: 0.75rem 0;
+        line-height: 1.5;
+        color: var(--muted);
+      }
+      a {
+        color: var(--accent);
+      }
+      .badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="badge">OWeb satellite</div>
+      <h1>DocuSeal</h1>
+      <p>
+        This Vercel project holds constellation configuration and will host edge
+        entrypoints for SSO with One OS. The DocuSeal application (Rails) runs
+        on Docker with Postgres — not as a Vercel container.
+      </p>
+      <p>
+        Launch from
+        <a href="https://oweb.one/login?launch=docuseal">OWeb</a>
+        once the app runtime is deployed and registered in the ecosystem catalog.
+      </p>
+    </main>
+  </body>
+</html>

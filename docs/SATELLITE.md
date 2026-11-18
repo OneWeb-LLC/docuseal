@@ -2,7 +2,7 @@
 
 `app_id`: **docuseal**  
 Activation scope: **workspace**  
-Hosting: **Docker / self-hosted** (upstream DocuSeal); Vercel project **`docuseal-oweb`** holds constellation secrets and future edge entrypoints.  
+Hosting: **Docker / self-hosted** (upstream DocuSeal); Vercel project **`docuseal-oweb`** holds constellation secrets, a **static status page** (`deploy/vercel/`), and future edge entrypoints — **do not** deploy the root `docker/Dockerfile` to Vercel (Rails needs Postgres/Redis and exits without them).  
 Auth host: **https://auth.oweb.one**  
 Control plane: **https://oweb.one**
 
