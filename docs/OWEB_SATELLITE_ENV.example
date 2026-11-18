@@ -1,0 +1,20 @@
+# OWeb constellation — DocuSeal satellite (reference only; do not commit secrets)
+
+# One OS (shared with oweb.one)
+SUPABASE_URL=
+SUPABASE_PUBLISHABLE_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+SUPABASE_PROJECT_ID=
+VITE_SUPABASE_URL=
+VITE_SUPABASE_PUBLISHABLE_KEY=
+VITE_SUPABASE_PROJECT_ID=
+
+# OWeb control plane
+NEXT_PUBLIC_OWEB_URL=https://oweb.one
+OWEB_APP_ID=docuseal
+PUBLIC_APP_URL=https://docuseal-oweb.vercel.app
+
+# DocuSeal runtime (Docker / host — not stored on Vercel for Rails image)
+DATABASE_URL=postgresql://postgres:postgres@postgres:5432/docuseal
+SECRET_KEY_BASE=
+HOST=
